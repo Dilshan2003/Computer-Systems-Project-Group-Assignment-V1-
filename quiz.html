@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz about AMP">
+    <meta name="keywords" content="Quiz">
+    <meta name="author"
+        content="Basnayake Mudalige Wethum Mandinu Basnayake, Sasindu Dilshan Ranwadana, Senuda Hansara, Yogeswaran Yadarsan, Nimsan Mandinu Kodikara">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Quiz on AMP</title>
+</head>
+
+<body>
+    <header class="centered_element">
+        <h1>AMP </h1>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="topic.html">Overview</a></li>
+            <li> <a href="quiz.html">Quiz</a></li>
+            <li> <a href="enhancements.html">Enhancements</a></li>
+        </ul>
+    </nav>
+
+    <div id="marquee_section">
+        <div>
+            <span>Please be sure to complete the questions given below!</span>
+            <span>Please be sure to complete the questions given below!</span>
+        </div>
+    </div>
+    <section class="info_overview">
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend id="first_legend"> Student details</legend>
+            <p>
+                <label for="firstname">First Name: </label>
+                <input type="text" name="firstname" id="firstname" pattern="[a-zA-Z\s]+" required maxlength="30">
+            </p>
+            <p>
+                <label for="lastname">Last Name: </label>
+                <input type="text" name="lastname" id="lastname" pattern="[a-zA-Z\s]+" required maxlength="30">
+            </p>
+            <p>
+                <label for="student_id">Student ID: </label>
+                <input type="text" name="student_id" id="student_id" required pattern="[0-9]{7,10}">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Answer the questions</legend>
+            <fieldset class="inside_fieldset">
+
+                <label for="quiz1">1.What Does AMP Stand For?</label>
+                <input type="text" class="answers" name="quiz_1_answer" id="quiz1" pattern="[A-Za-z\s]+" required>
+            </fieldset>
+            <fieldset class="inside_fieldset">
+                <p>2.Who Invented AMP?</p>
+                <input type="radio" id="ans1" name="quiz_2_answer" value="Google" required>
+                <label for="ans1">Google</label>
+                <input type="radio" id="ans2" name="quiz_2_answer" value="Microsoft" required>
+                <label for="ans2">Microsoft</label>
+                <input type="radio" id="ans3" name="quiz_2_answer" value="Apple" required>
+                <label for="ans3">Apple</label>
+                <input type="radio" id="ans4" name="quiz_2_answer" value="US government" required>
+                <label for="ans4">US government</label>
+            </fieldset>
+            <fieldset class="inside_fieldset">
+                <section id="check">
+                <p>3.Which of the following are the benefits of using AMP(Accelerated
+                    Mobile
+                    Pages)?
+                </p>
+                <p>Select all that apply :</p>
+                <input type="checkbox" class="checkbox_answer" id="quiz_3_ans_1" name="quiz_3_ans_1"
+                    value="Fast page loading times">
+                <label for="quiz_3_ans_1"  >Fast page loading times</label>
+                <input type="checkbox" class="checkbox_answer" id="quiz_3_ans_2" name="quiz_3_ans_2"
+                    value="Improved SEO">
+                <label for="quiz_3_ans_2"  >Improved SEO</label>
+                <input type="checkbox" class="checkbox_answer" id="quiz_3_ans_3" name="quiz_3_ans_3"
+                    value="Responsive design">
+                <label for="quiz_3_ans_3"  >Responsive design</label>
+                <input type="checkbox" class="checkbox_answer" id="quiz_3_ans_4" name="quiz_3_ans_4"
+                    value="Customizable design">
+                <label   for="quiz_3_ans_4">Customizable design</label>
+            </section>
+            </fieldset>
+
+            <fieldset class="inside_fieldset">
+
+                <label for="quiz_fourth_answers">4.What is AMP used for:</label>
+                <p class="answers">
+                    <select id="quiz_fourth_answers" name="quiz_fourth_answers" required>
+                        <option value="">--Select an option--</option>
+                        <option value="To improve mobile website speed and performance">To improve mobile website speed
+                            and performance</option>
+                        <option value="To add more features to mobile websites">To add more features to mobile websites
+                        </option>
+                        <option value="To make mobile website more appealing graphically">To make mobile website more
+                            appealing graphically</option>
+                        <option value="To improve mobile website privacy">To improve mobile website privacy</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset class="inside_fieldset">
+
+                <label for="quiz_5_answer">5.Why was AMP initially created by Google?</label>
+                <p class="answers"><textarea id="quiz_5_answer" name="quiz_5_answer" cols="45" rows="5"
+                        placeholder="Enter Your Answer..."></textarea></p>
+                <br>
+                <input id="submit_button" type="submit" value="Submit">
+            </fieldset>
+
+        </fieldset>
+    </form>
+
+</section>
+
+    <footer>
+        <p>Tutors Email: <a href="mailto:fshalu5@gmail.com">Fathima Shalina</a></p>
+    </footer>
+</body>
+
+</html>

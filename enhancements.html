@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhancements made to the website">
+    <meta name="keywords" content="Enhancements">
+    <meta name="author"
+    content="Basnayake Mudalige Wethum Mandinu Basnayake, Sasindu Dilshan Ranwadana, Senuda Hansara, Yogeswaran Yadarsan, Nimsan Mandinu Kodikara">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Enhancements</title>
+</head>
+
+<body>
+    <section class="info_overview">
+    <header class="centered_element">
+        <h1>AMP </h1>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="topic.html">Overview</a></li>
+            <li> <a href="quiz.html">Quiz</a></li>
+            <li> <a href="enhancements.html">Enhancements</a></li>
+        </ul>
+    </nav>
+    <h1>Enhancements made in this Website</h1>
+    <p>The Enhacement can be seen by a change the original state of the element (eg: the elements background color to yellow or red and text color to red.)</p>
+    <p>To reset the effects return back to another page.</p>
+    <p>This is done for purpose of showing the enhacements that have been done only.</p>
+
+    <article>
+        <h2>1. Flexbox(CSS rule)</h2>
+        <p>This particular code can be used to position items in a more efficient way than just using padding and
+            margins. The requirements of the assignment do not make it essential to prioritize efficiency when
+            positioning elements in the website,
+            however, we have made use of this CSS rule to position are website elements to make the content more clear to
+            the user.</p>
+        <p>We need use the following code to implement flexbox: <br><br> <strong> display:flex;</strong> <br><br> we can
+            then use justify-content
+            and align-items to position the items as we would need.</p>
+        <p>We used w3schools to learn about flexbox <a href="https://www.w3schools.com/css/css3_flexbox.asp">Flexbox</a>
+        </p>
+        <p>We have implemented the flexbox styling method on a number of occasions:</p>
+        <ul>
+            <li>
+                <a href="index.html#main_head">We have used it in the main heading.</a>
+            </li>
+            <li>
+                <a href="index.html#nav">It has been used to adjust the menu items.</a>
+            </li>
+
+        </ul>
+      
+    </article>
+    <article>
+        <h2>2. Key frames</h2>
+
+        <h3>The use of keyframes and animation</h3>
+        <p>We have used the keyframes method to add two styles to the website, one to the header and another to the quiz
+            page. When entering the page the header will slowly turn to its original state by recovering its background
+            colour. In the quiz page, we have used keyframes to create a marquee animation.</p>
+        <p>The following is how we implemented the marquee animation: <br> @keyframes marquee {<br>
+            0% { left: 0; } <br>
+            50% { left: -50; } <br>
+            100% { left: -100%; } <br>
+            } <br>
+            #marquee_section { <br>
+                height: 50px; <br>
+                width: 100%; <br>
+             <br>
+                overflow: hidden; <br>
+                position: relative; <br>
+            } <br>
+             
+            #marquee_section div{ <br>
+                display: block; <br>
+                width: 200%; <br>
+                height: 70px; <br>
+             <br>
+                position: absolute; <br>
+                overflow: hidden; <br>
+             <br>
+                animation: marquee 5s linear infinite; <br>
+            } <br>
+             
+            #marquee_section span { <br>
+                float: left; <br>
+                width: 50%; <br>
+                font-size: 1.5em; <br>
+            } <br>
+        </p>
+        <p>The following is how we implemented the header animation: <br>
+            header{ <br>
+            animation-name:backgroundChange ; <br>
+            animation-duration: 4s; <br>
+            } <br>
+            @keyframes backgroundChange { <br>
+            from {background-color: #f0f8ff;} <br>
+            to {background-color: #e94f37;} <br>
+            } <br>
+        </p>
+        <p>We used w3schools to understand the use of this attribute. <a
+                href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.php">Key frames w3schools</a> </p>
+        <p>The following are the links to where we used this attribute: </p>
+            <ul>
+                <li><a href="quiz.html#marquee_section">Marquee Section</a></li>
+                <li><a href="index.html#header">Header</a></li>
+            </ul>
+        
+
+
+
+    </article>
+
+    <article>
+        <h2>3.Innovative HTML elements</h2>
+        <h3>Summary and details elements.</h3>
+        <p>We have used these elements to make a drop-down element in the ordered list on the overview page. It was not
+            required to make a user interactive list, however, we added this functionality using summary and detail
+            elements to increase engagement with
+            the users and the website.</p>
+        <p>We used it in the following way: </p>
+        <p>&lt;details>
+            <br>
+            &lt;summary> <br>
+            &lt;strong>AMP Web stories &lt;/strong> <br>
+            &lt;/summary> <br>
+            - This service allows users to create
+            visuals, animations and
+            interactions for a website.
+            <br>
+            &lt;/details>
+        </p>
+        <p>We used w3schools to understand the use of this element. <a
+                href="https://www.w3schools.com/tags/tag_details.asp">Summary and details elements in w3schools</a> </p>
+        <p>The following link goes to where we used this attribute: 
+           <br> <a href="topic.html#features"> Summary and detials</a> </p>
+    </article>
+    <article>
+        <h2>4.Responsive Design</h2>
+        <h3>The use of media quries</h3>
+        <p>We have used media quires to adjust certain elements at mobile and tablet screen sizes. These elements
+            include the font size of the checkbox labels on the quiz page, the main heading, the header and we have
+            gotten rid of the form padding at mobile screen size to allow the form to take up more screen space. We have
+            gone beyond the requirement of the assignment and changed certain elements to appear better on mobile and
+            tablet screen sizes, so that the user experience is improved. </p>
+        <p>This is how we have changed the responsive elements for the mobile screen: </p>
+        <p>
+            @media screen and (max-width:350px) { <br>
+            .checkbox_answer { <br> <br>
+            font-size: 0.5em; <br>
+            } <br>
+            <br>
+            #main_heading h1 { <br>
+            font: bold 1.2em Roboto; <br>
+            } <br>
+            <br>
+            header h1 { <br>
+            font: bold 1em Roboto; <br>
+            } <br>
+            <br>
+            #header_heading { <br>
+            font: bold 0.7em Roboto; <br>
+            } <br>
+            form{ <br>
+            padding: 0; <br>
+            } <br>
+            }
+        </p>
+
+        <p>We used w3schools and MDN to get an additional understanding of the way to use media quires.</p>
+        <ul>
+            <li> <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">Media queries via w3schools</a> </li>
+            <li> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Media
+                    queris via MDN</a> </li>
+        </ul>
+
+
+        <p>Use inspect option to see subtle changes when the page hits its breakpoints</p>
+        <p>This is how we have used the media query rule quiz page., specifically for the checkboxes. <a href="quiz.html#check"> Quiz page - media queries</a> </p>
+        <p>This is how we have used the media query rule in the header. <a href="index.html#header"> Header - media queries</a> </p>
+    </article>
+
+</section>
+    <footer>
+        <p>Tutors Email: <a href="mailto:fshalu5@gmail.com">Fathima Shalina</a></p>
+    </footer>
+</body>
+
+</html>

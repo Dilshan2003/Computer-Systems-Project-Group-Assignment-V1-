@@ -1,0 +1,438 @@
+/* authors: Basnayake Mudalige Wethum Mandinu Basnayake, Sasindu Dilshan Ranwadana, Senuda Hansara, Yogeswaran Yadarsan, Nimsan Mandinu Kodikara */
+/* purpose: To style the index.html, topic.html, quiz.html and enhacement.html documents*/
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+    background-color: #caf0f8;
+    margin: 0;
+    padding: 0;
+
+}
+.info_overview {
+    margin: 12px;
+    padding: 12px;
+}
+/* styles that apply to index.html page specifically */
+/* for the main heading */
+#main_heading {
+    height: 85vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* this is done to make sure that the h1 text doesnt get the effect of filter */
+#main_heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/amp-background.png);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(40%);
+}
+/* the subheading and paragraphs in index page */
+#main_heading h2 {
+    font: bold 4em Lato;
+    color: #ffffff;
+    position: relative;
+}
+#second_section {
+    padding: 0 15px;
+}
+#second_section h2 {
+    width: 100%;
+    height: 20%;
+    font-size: 2em;
+}
+#second_section article {
+    height: 80%;
+    margin: auto;
+}
+#second_section ul li {
+    padding-bottom: 12px;
+}
+#second_section article p {
+    font-size: 1.2em;
+}
+
+/* styles thatapply to the topic.html page specifically */
+/* table styling */
+#references {
+    padding-top: 25px;
+}
+table {
+    border-collapse: collapse;
+}
+#table_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+th {
+    background-color: #006494;
+    color: white;
+    width: 50%;
+}
+td {
+    background-color: #0582ca;
+    color: white;
+}
+th,
+td {
+    border: 1px black solid;
+}
+
+/* styling the aside */
+#topic_body {
+    margin: 0;
+    padding: 0;
+}
+
+#aside_section {
+    /* padding and margin is set to 0 and width is set to hundred to full fill the requirement that the aside should be 30% of width */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#aside_section p {
+    width: 70%;
+}
+aside {
+    /* since the margin and padding is 0 we can directly add a 30% width to the aside element*/
+    width: 30%;
+    float: right;
+    border: 1px #03045e solid;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: rgb(186, 211, 234);
+}
+
+
+/* styling the figure element */
+figure {
+    height: 100%;
+    width: 90%;
+
+}
+figure img {
+    height: 100%;
+    width: 400px;
+}
+/* giving all topic sections padding in the bottom to make the page more readable */
+.section_padding {
+    padding-bottom: 25px;
+}
+/* styling the subheadings */
+.main_topic_headings {
+    text-align: center;
+}
+.main_topic_questions,
+.main_topic_headings {
+    transition: all 700ms;
+
+}
+.main_topic_questions:hover,
+.main_topic_headings:hover {
+    background-color: #03045e;
+    color: #00b4d8;
+}
+
+
+/* quiz page styling */
+.inside_fieldset{
+    margin: 10px;
+}
+#marquee_section {
+    height: 50px;
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+}
+#marquee_section div {
+    display: block;
+    width: 200%;
+    height: 70px;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 5s linear infinite;
+}
+#marquee_section span {
+    float: left;
+    width: 50%;
+    font-size: 1.5em;
+}
+#submit_button {
+    background-color: white;
+    color: #222;
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#submit_button:hover {
+    background-color: rgb(29, 61, 126);
+    color: #ffffff;
+}
+
+form {
+    padding: 5px 15px;
+}
+
+input {
+    transition: all 300ms ease-in-out;
+}
+input:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+legend {
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+}
+
+
+/* these styles effect all or most pages */
+nav {
+    background-color: #03045e;
+    font-family: 'Vina Sans', cursive;
+    width: auto;
+    padding: 8px;
+    margin: 8px;
+}
+
+header {
+    background-color: #03045e;
+
+    color: #90e0ef;
+
+    margin: 8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    animation-name: backgroundChange;
+    animation-duration: 4s;
+}
+header h1 {
+    font: bold 3em 'PT Serif';
+
+    margin: 8px 8px;
+}
+
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 1% 0 1% 0;
+    margin: 0 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #f0f8ff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: " ";
+    position: absolute;
+    background-color: #f6f7eb;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+.centered_element {
+    text-align: center;
+}
+footer {
+    font-style: italic;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left:0 ;
+    margin-right: 0;
+    text-align: center;
+    margin: auto;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    transition: all 1200ms;
+}
+footer a:hover {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+/* h1 font short hand used */
+h1,
+#overview_heading {
+    font: bold 3em Roboto;
+}
+h1,
+h2,
+h3 {
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+article {
+    padding: 0 15px;
+}
+/* enhancements */
+
+#nav:target {
+    background-color: rgb(153, 153, 5);
+}
+#marquee_section:target {
+    background-color: rgb(255, 255, 0);
+    color:rgb(137, 2, 2);
+}
+#main_head:target{
+    background-color: rgb(255, 255, 0);
+    color:rgb(137, 2, 2);
+}
+#header:target{
+    color: #ff0000;
+}
+#features:target{
+    background-color: rgb(255, 255, 0);
+    color:rgb(137, 2, 2);
+}
+#check:target{
+    background-color: rgb(255, 255, 0);
+}
+
+
+/* marquee animation */
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: -25%;
+    }
+
+    35% {
+        left: -35%;
+    }
+
+    50% {
+        left: -50%;
+    }
+
+    90% {
+        left: -90%;
+    }
+
+    75% {
+        left: -75%;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+/* the animation of the header */
+@keyframes backgroundChange {
+    from {
+        background-color: #ededff;
+
+    }
+
+    to {
+        background-color: #03045e;
+    }
+}
+
+
+
+
+
+/* media quires used to make the website responsive for mobile and tablet screen */
+@media screen and (max-width:350px) {
+    .checkbox_answer {
+        font-size: 0.5em;
+    }
+
+    #main_heading h1 {
+        font: bold 1.2em Roboto;
+    }
+
+    header h1 {
+        font: bold 1em;
+    }
+
+    #header_heading {
+        font: bold 0.7em Roboto;
+    }
+
+    form {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    figure img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #marquee_section {
+        font-size: 0.7em;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    #marquee_section {
+        font-size: 0.5em;
+    }
+
+}
+
+@media screen and (max-width:994px) {
+    nav {
+        height: 3.2em;
+    }
+
+    header h1 {
+        font: bold 2em Roboto;
+    }
+
+    #header_heading {
+        font: bold 0.7em Lato;
+    }
+
+    #main_heading h1 {
+        font: bold 4em Lato;
+    }
+}
